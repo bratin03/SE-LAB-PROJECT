@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,500;0,600;0,800;1,300;1,700&display=swap");
+
+.doctor-card {
+    display: inline-block;
+    margin: 2rem 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem; 
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+    background: linear-gradient(to top, #191d23, #232a34);
+    border-radius: 30px;
+
+    .doctor-title {
+      margin: 20px 0 10px 0;
+      color: #fefefe;
+      font-size: 1.5rem;
+    }
+    button {
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        // padding: rem;
+        border-radius: 30px;
+        border: none;
+        background-color: #f54a6e;
+        color: #141519;
+        cursor: pointer;
+        transition: 0.3s background-color;
+    }
+    button:hover {
+        background-color: rgb(192, 0, 0);
+        color: #e6e6e6;
+    }
+  }
+
+  

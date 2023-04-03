@@ -1,0 +1,60 @@
+.appointment-card {
+    display: inline-block;
+    margin: 2rem 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem; 
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+    background: linear-gradient(to top, #191d23, #232a34);
+    .appointment-title {
+        margin: 20px 0 10px 0;
+        color: #fefefe;
+        font-size: 1.5rem;
+    } 
+    .appointment-description {
+        margin: 1.2rem;
+    }
+    .appointment-show-date {
+        margin: 1.2rem;
+    }
+    .appointment-button-grid {
+        display: flex;
+        flex-direction: row;
+        .button {
+            padding: 0.6rem;
+            margin: 1.2rem;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            font-weight: 400;
+            border-radius: 30px;
+            border: none;
+            background-color: #f54a6e;
+            color: #141519;
+            transition: 0.3s background-color;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(192, 0, 0);
+            color: #e6e6e6;
+        }
+        .appointment-status {
+            font-size: 1.5rem;
+            padding: 2rem;
+            background-color: #e6e6e6;
+        }
+    }
+}
+
+.green {
+    color: rgb(0, 255, 0);
+}
+
+.yellow {
+    color: yellow;
+}
+
+.red {
+    color: red;
+}

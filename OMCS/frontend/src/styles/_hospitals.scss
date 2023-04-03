@@ -1,0 +1,29 @@
+.hospital-container {
+    min-height: 100vh;
+    height: fit-content;
+    // background: #141628;
+    background: url("../assets/hospital.jpg");
+}
+
+.hospital-list {
+    color: #fefefe;
+    display: flex;
+    flex-direction: row;
+}
+
+.hospital-card {
+    display: inline-block;
+    margin: 2rem 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+    background: linear-gradient(to top, #191d23, #232a34);
+    border-radius: 30px;
+    .hospital-title {
+      margin: 20px 0 10px 0;
+    color: #fefefe;
+    font-size: 1.5rem;
+    }
+}
