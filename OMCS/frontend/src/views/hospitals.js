@@ -10,12 +10,12 @@ const Hospitals = () => {
     const notyf = new Notyf();
 
     const [hospitalList, setHospitalList] = useState([]);
-    
+
 
     useEffect(() => {
 
         if (localStorage.getItem("hospitalList") !== null) setHospitalList(JSON.parse(localStorage.getItem("hospitalList")));
-        
+
         axios.get(`${BACKEND_URL}/api/auth/hospitals`)
             .then((response) => {
                 setHospitalList(response.data.hospitals)
@@ -26,26 +26,36 @@ const Hospitals = () => {
 
     localStorage.setItem("hospitalList", JSON.stringify(hospitalList));
 
-    
+
 
     let navigate = useNavigate();
 
-    return (
+    return (<>
+        
+        
         <div className="hospital-container">
+        <div className="bg_move">
+          <i className="fas fa-palette"></i>
+          <h1 >Find a Hospital</h1>
+        </div>
+        
+
             <div className="hospital-list">
                 {
                     hospitalList.map((hospital, index) => {
-                        return (<HospitalCard 
-                            key={index} 
-                            name={hospital.name} 
-                            address={hospital.address} 
+                        return (<HospitalCard
+                            key={index}
+                            name={hospital.name}
+                            address={hospital.address}
                             pincode={hospital.pincode}
                             index={index} />);
                     })
                 }
             </div>
         </div>
-  );
+    </>
+
+    );
 }
 
 export default Hospitals;
