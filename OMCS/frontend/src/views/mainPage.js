@@ -39,7 +39,7 @@ const MainPage = () => {
           <h1 >Welcome to MedBud</h1>
         </div>
       </div>
-
+        
     </div>
   );
 }
