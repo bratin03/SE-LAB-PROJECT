@@ -15,7 +15,7 @@ const Profile = (props) => {
     <div className="patient-card">
       <div className="profile-title title">{props.title}</div>
       <div className="patient-info">
-        You are currently logged in as 
+         Patient Info:
       </div>
       <div className="patient-card-name">
         {props.profile.first_name} {props.profile.last_name}
@@ -28,7 +28,7 @@ const Profile = (props) => {
 const Errors = () => {
   return(
     <div className="appointment">
-      Please input PIN CODE first
+      Enter PIN Code
     </div>
   )
 }

@@ -9,6 +9,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
 
 .main-page {
   background-color: #000000;
@@ -76,7 +77,6 @@ $time-step: $time/$max;
   justify-content: space-between;
 
   .main-header-sf {
-    font-size: 1.2rem;
     padding: 1.2rem;
   }
 
@@ -85,6 +85,7 @@ $time-step: $time/$max;
   }
 
   .main-btns {
+    font-family: 'Fira Code', monospace;
     display: flex;
     flex-direction: row;
     // font-family: 'Open Sans Condensed', sans-serif;
@@ -155,9 +156,7 @@ $time-step: $time/$max;
 }
 
 .main-title {
-  // color: #fff;
-  background: url("../assets/landing.jpg");
-  background-size: cover;
+  background: linear-gradient(to bottom, #6495ED, #F08080);
   color: #131a5c;
   font-family: 'Roboto Slab', serif;
   font-size: 3rem;
@@ -173,7 +172,8 @@ $time-step: $time/$max;
     padding: 0.6rem 1rem;
     background-color: #f54a6e;
     border-radius: 5px;
-    transition: all 0.2s ease-in-out;
+    transition: all 10s ease-in-out; 
+
     font-size: 1.2rem;
     cursor: pointer;
 
@@ -181,7 +181,33 @@ $time-step: $time/$max;
       background-color: #ee1544;
     }
   }
+
+  animation: changeBackground 20s ease-in-out infinite;
+  background-size: cover;
+  
 }
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("../assets/landing-1.jpg");
+  }
+  20% {
+    background-image: url("../assets/landing-2.jpg");
+  }
+  40% {
+    background-image: url("../assets/landing-3.jpg");
+  }
+  60% {
+    background-image: url("../assets/landing-4.jpg");
+  }
+  80% {
+    background-image: url("../assets/landing-5.jpg");
+  }
+  100% {
+    background-image: url("../assets/landing-1.jpg");
+  }
+}
+
 
 .inside-img {
   height: 100%;
@@ -207,9 +233,9 @@ $time-step: $time/$max;
   -ms-flex-align: center;
   align-items: center;
   //  rgba(143, 187, 255, 0.8) 16%, rgba(143, 187, 255, 0.8) 20%, rgba(80, 138, 190, 0.8) 20%, rgba(80, 138, 190, 0.8) 24%);
-  background: repeating-radial-gradient(circle at 100% 100%, rgba(0, 0, 55, 0.6) 4%, rgba(0, 61, 107, 0.6) 8%, rgba(11, 40, 54, 0.6) 8%,
+  background: repeating-radial-gradient(circle at 100% 100%, rgba(0, 0, 55, 0.6) 4%, rgba(0, 61, 107, 0.6) 8%, rgba(0, 14, 20, 0.6) 8%,
       rgba(11, 40, 54, 0.6) 12%, rgba(49, 67, 89, 0.6) 12%, rgba(49, 67, 89, 0.6) 16%, rgba(87, 118, 156, 0.6) 16%, rgba(87, 118, 156, 0.8) 20%, rgba(32, 73, 129, 0.6) 20%, rgba(32, 73, 129, 0.6) 24%), repeating-radial-gradient(circle at 0% 100%, rgba(0, 61, 107, 0.8) 4%,
-      rgba(0, 61, 107, 1) 8%, rgba(11, 40, 54, 0.8) 8%, rgba(11, 40, 54, 1) 12%, rgba(49, 67, 89, 0.8) 12%, rgba(49, 67, 89, 1) 16%,
+      rgba(0, 61, 107, 1) 8%, rgba(49, 155, 207, 0.8) 8%, rgba(11, 40, 54, 1) 12%, rgba(49, 67, 89, 0.8) 12%, rgba(49, 67, 89, 1) 16%,
       rgba(87, 118, 156, 0.9) 16%, rgba(87, 118, 156, 0.9) 20%, rgba(32, 73, 129, 0.9) 20%, rgba(32, 73, 129, 0.9) 24%);
 
   background-size: 250px 250px;

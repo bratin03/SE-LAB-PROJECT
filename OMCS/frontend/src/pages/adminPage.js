@@ -20,7 +20,7 @@ const Profile = (props) => {
     <div className="admin-card">
     <div className="profile-title title">{props.title}</div>
     <div className="admin-info">
-      You are currently logged in as 
+      Admin Info:
     </div>
       <div className="admin-card-name">
         {props.email}
@@ -65,7 +65,7 @@ const ListOfDoctors = (props) => {
 
 
       <div className="doctor-label">
-        Enrolled Doctors
+        Registered Doctors
       </div>
 
       <div className="doctor-list">

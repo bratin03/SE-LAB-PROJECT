@@ -22,7 +22,7 @@ const Navbar = (props) => {
                 <div className="link" key={index} isselected={String(props.currentSelection === index)} onClick={() => {props.changeSelection(index)}}>{option.text}</div>)
               })
           }
-        <button className="navbar-button button" onClick={logout}>Log Out</button>
+        <div className="link" onClick={logout}>Log Out</div>
       </div>
     </div>
   );

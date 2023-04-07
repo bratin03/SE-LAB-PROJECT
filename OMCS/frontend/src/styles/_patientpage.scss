@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto+Slab:wght@500&display=swap');
 
 .patient-page {
-    background-color: #141628;
+    background: url("../assets/1205.jpg");
     min-height: 100vh;
     height: fit-content;
     color: #fff;
+    
 
 }
 
@@ -24,7 +25,8 @@
     align-items: center;
     // color: green;
     font-family: 'Fira Code', monospace;
-    font-family: 'Roboto Slab', serif;
+    font-size: 3px;
+
     border-width: 2px;
     border-style: solid;
     border-color: #26293f;
@@ -36,7 +38,7 @@
 
 .patient-label {
     font-family: 'Fira Code', monospace;
-    font-family: 'Roboto Slab', serif;
+
     font-size: 1.5rem;
     padding: 1.4rem;
 }
@@ -44,6 +46,7 @@
 .appointment-container {
     display: flex;
     flex-direction: column;
+      border-radius: 1rem;
     // justify-content: center;
     align-items: center;
     .appointment-pincode {
@@ -53,13 +56,15 @@
             flex: 1;
         }
         .pincode-input {
-            background:#26293f;
+            border-radius: 1rem;
+            background:#f0f0f3;
             padding: 0.75rem;
             font-size: 1.2rem;
             margin: 1.2rem;
-            color: #fff;
+            color: #07324e;
             outline: none;
             border: none;
+            
             
 
         }
@@ -67,11 +72,7 @@
             transition-duration: 0.2s;
             padding: 1rem;
             outline: none;
-            /* Created with https://www.css-gradient.com */
-background: #C56F98;
-background: -webkit-linear-gradient(top left, #C56F98, #252EB8);
-background: -moz-linear-gradient(top left, #C56F98, #252EB8);
-background: linear-gradient(to bottom right, #C56F98, #252EB8);
+background: linear-gradient(to bottom right, #ece4e8, #08265f);
 cursor: pointer;
             outline: none;
             border: none;
@@ -81,7 +82,7 @@ cursor: pointer;
             outline: none;
         }
         .pincode-button:hover {
-            padding: 1.2rem;
+            padding: 1.3rem;
         }
         .pincode-icon {
             color: #fff;

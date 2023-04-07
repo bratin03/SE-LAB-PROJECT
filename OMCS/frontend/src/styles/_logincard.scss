@@ -1,19 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto+Slab:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
-.Login {
+* {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+.Login {    font-family: 'Fira Code', monospace;
     min-height: 100vh;
     height: fit-content;
     // background-color: #14151f;
     background: url("../assets/login.jpg");
+    opacity: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     .form-title {
-        color: #ffffff;
         font-family: 'Fira Code', monospace;
-        font-family: 'Roboto Slab', serif;
+        color: #ffffff;
+
         font-size: 1.5rem;
         padding: 1.4rem;
         border-width: 2px;
@@ -28,6 +41,7 @@
 }
 
 .login-form {
+    font-family: 'Fira Code', monospace;
     padding:  40px 30px; 
   background:  #fefefe; 
   display:  flex; 
@@ -44,6 +58,7 @@
     }
 
     .form-group {
+        font-family: 'Fira Code', monospace;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -69,6 +84,8 @@
         }
     }
     .form-button {
+        cursor: pointer;
+        font-family: 'Fira Code', monospace;
         -webkit-appearance:  none; 
         width:  auto;
         min-width:  100px;
@@ -76,7 +93,7 @@
         text-align:  center; 
         padding:  15px 40px;
         margin-top:  5px; 
-        background-color:  saturate(rgb(32, 88, 141), 30%); 
+        background-color:  saturate(rgb(5, 44, 82), 30%); 
         color:  #fff; 
         font-size:  14px;
         margin-left:  auto; 
