@@ -25,7 +25,7 @@ const Profile = (props) => {
     <div className="patient-card">
       <div className="profile-title title">{props.title}</div>
       <div className="patient-info">
-        You are currently logged in as 
+        Doctor Info:
       </div>
       <div className="patient-card-name">
         Dr. {props.profile.first_name} {props.profile.last_name}

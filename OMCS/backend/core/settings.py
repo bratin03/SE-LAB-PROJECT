@@ -131,9 +131,9 @@ dbport = os.getenv("DATABASE_PORT")
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db1',
-        'USER': 'somya',
-        'PASSWORD': '5184',
+        'NAME': 'testdb',
+        'USER': 'bm',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '5432',
     }
