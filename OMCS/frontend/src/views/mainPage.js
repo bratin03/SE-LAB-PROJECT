@@ -32,14 +32,15 @@ const MainPage = () => {
       </div>
       <div className="main-title">
 
-       
-        
+
+
         <div className="bg_move">
           <i className="fas fa-palette"></i>
           <h1 >Welcome to MedBud</h1>
         </div>
       </div>
-        
+
+
     </div>
   );
 }

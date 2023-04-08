@@ -79,7 +79,7 @@ REST_FRAMEWORK = {
 # Configure the JWT settings
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=14),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=90),
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
     'ALGORITHM': 'HS256',
@@ -131,9 +131,9 @@ dbport = os.getenv("DATABASE_PORT")
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'testdb',
-        'USER': 'bm',
-        'PASSWORD': '1234',
+        'NAME': 'db1',
+        'USER': 'somya',
+        'PASSWORD': '5184',
         'HOST': 'localhost',
         'PORT': '5432',
     }
