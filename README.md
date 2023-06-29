@@ -1,4 +1,5 @@
-# SE-LAB-PROJECT
+# Software Engineering-LAB Project
+# Topic: Online Medical Consultation System
 
 ## Demo
 
