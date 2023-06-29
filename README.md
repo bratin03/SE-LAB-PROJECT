@@ -1,5 +1,17 @@
 # Software Engineering-LAB Project
 # Topic: Online Medical Consultation System
+## Team members: 
+
+Bratin Mandal(21CS10016) 
+
+Swarnabh Mandal(21CS10068) 
+
+Somya Kumar(21CS30050)
+## Instructors: 
+
+Prof. Sourangshu Bhattacharya
+
+Prof. Abir Das
 
 ## Demo
 
